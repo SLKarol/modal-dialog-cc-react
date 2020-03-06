@@ -6,3 +6,6 @@ ____
 
 The modal window component was written under the article [How to create an accessible React modal](https://levelup.gitconnected.com/how-to-create-an-accessible-react-modal-5b87e6a27503?ref=heydesigner). But I changed this component a bit and added the ability to resize. <br />
 The component is located in the src/ModalDialogCC directory, the demo is src/App.js and you can start the demo **npm start**.
+____
+
+![Скриншот](https://github.com/SLKarol/modal-dialog-cc-react/raw/master/screenshots/screenshot.PNG)

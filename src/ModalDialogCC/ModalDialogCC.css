@@ -1,0 +1,126 @@
+/*
+ТОЛЬКО для разметки модальных окон.
+НЕ ДЛЯ содержимого модальных окон.
+ */
+ .modal-container-default {
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(48, 48, 48, 0.4);
+	font-size: 16px;
+}
+.modal-content-default {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+}
+.modal-header-default {
+	position: relative;
+	padding: 9px 28px 9px 20px;
+	cursor: grab;
+	border-left: 5px solid #428bca;
+	border-bottom: solid 1px #d8dce3;
+	font-size: 24px;
+}
+.modal-header-default:focus {
+	outline-color: white;
+}
+
+.modal-header-default--small-modal {
+	font-size: 20px;
+}
+
+.cross-btn {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+	display: inline-flex;
+}
+
+.modal-body-default {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.modal-body-default--structure-edit {
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+}
+
+.modal-body-default__center {
+	margin: 25px 55px 15px 55px;
+}
+
+.modal-body-default__block {
+	display: flex;
+	margin: 0 0 25px;
+	padding: 0;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+}
+.modal-body-default__block_checkbox {
+	flex-direction: row_checkbox;
+}
+
+.modal-footer-default {
+	border-top: solid 1px #d8dce3;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.modal-footer-default__button-margin {
+	margin-right: 16px;
+}
+
+.close-btn {
+	font-weight: 600;
+	box-shadow: rgba(0, 0, 0, 0.35) 0 2px 2px 0;
+	background-color: rgb(77, 144, 255);
+	color: rgb(247, 248, 250);
+	height: 35px;
+	width: 117px;
+	font-size: 14px;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(43, 123, 255);
+	cursor: pointer;
+}
+
+.modal__resizer {
+	box-sizing: border-box;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%; /*magic to turn square into circle*/
+	background: white;
+	border: 3px solid #4286f4;
+	cursor: nwse-resize;
+	position: absolute;
+	right: -5px;
+	bottom: -5px;
+}
+
+.modal__resizer--hide {
+	display: none;
+}

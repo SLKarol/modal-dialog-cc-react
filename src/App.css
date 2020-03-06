@@ -1,0 +1,19 @@
+.app_settings {
+	width: 50%;
+}
+.app__parameter {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: start;
+	column-gap: 10px;
+	margin-bottom: 5px;
+}
+.app__label {
+	justify-self: right;
+}
+.app__input {
+	width: 100%;
+}
+.app__button {
+	grid-column: 2;
+}
